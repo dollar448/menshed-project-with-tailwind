@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap');
+@import "tailwindcss";
+@theme{
+--color-primary:#889C4D;
+--color-secondary:#a00;
+--color-primary-100:#767676;
+--color-secondary-100:#e7d697;
+--color-primary-200:#f2ecdc;
+--color-secondary-300:#48503c;
+--color-primary-300:#8b7271;
+--font-grotesk:"Host Grotesk","sans-serif";
+--color-secondary-200:#c9cbc4;
+
+}
+.card{
+    @apply border-1 border-secondary-200  rounded bg-white;
+}
+.links{
+    @apply text-primary-100 hover:text-black;
+}
+.footer-links{
+    @apply text-white font-bold text-xl p-2;
+}
+.footer-links-2{
+    @apply text-white text-sm hover:text-[#e2d1b5] pr-2 ;}
+    
