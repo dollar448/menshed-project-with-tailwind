@@ -150,7 +150,7 @@
       </div>
 
       <!-- Positioned the image to touch the right border -->
-      <video class="video-thumbnail__background-cover md:absolute md:right-0" muted="" loop="" playsinline=""
+      <video class="video-thumbnail__background-cover lg:absolute lg:right-0" muted="" loop="" playsinline=""
         autoplay="" poster="https://mensshed.org/wp-content/uploads/2021/12/video.jpg">
         <source src="https://mensshed.org/wp-content/uploads/2022/06/AMSA-Intro-Video.mp4" type="video/mp4" />
       </video>
@@ -227,16 +227,16 @@
     </div>
   </section>
 
-  <section class="bg-[url(img/pattern-02.jpg)] bg-cover bg-no-repeat">
-    <div class="md:flex justify-between p-4 pt-8 pl-8 pr-8">
-      <div class="p-2">
-        <h3 class="text-6xl font-bold text-primary">
+  <section class="bg-[url(img/pattern-02.jpg)] bg-cover bg-no-repeat px-5 md:px-10 py-20 flex flex-col gap-10">
+    <div class="w-full md:flex justify-between">
+      <div class="flex flex-col gap-5">
+        <h3 class="text-5xl font-bold text-primary">
           <span class="text-[#474e28]">Shed</span> news
         </h3>
-        <p>
-          Don't miss a thing... subscribe to AMSA
-          <a href="#" class="underline text-primary">mailing list</a> for
-          regular Events listing
+        <p class="leading-6">
+          Don't miss a thing... subscribe to AMSA <br>
+          <a href="#" class="underline text-primary font-bold">mailing list</a> for
+          regular news and events
         </p>
       </div>
       <div class="p-3 flex justify-between gap-5 text-white">
@@ -254,10 +254,14 @@
         </div>
       </div>
     </div>
-    <div class="md:flex items-center justify-evenly">
-      <div class="p-3">
-        <img src="img/image.jpg" alt="" />
-        <h2 class="underline text-primary font-bold text-2xl">
+
+    <div class="flex flex-col md:flex-row justify-between gap-8">
+      <div class="flex flex-col gap-2 items-start">
+        <!-- The image had a round border -->
+        <div class="h-80 w-full">
+          <img src="img/image.jpg" alt="" class="rounded-md object-cover size-full" />
+        </div>
+        <h2 class="underline text-secondary-300 font-bold text-xl">
           From the EO's desk:Men's week update
         </h2>
         <p>
@@ -265,9 +269,11 @@
           The shedder eNews Dear Shedders,Beffiting of it...
         </p>
       </div>
-      <div class="p-3">
-        <img src="img/vollie2.jpg" alt="" class="w-full h-full" />
-        <h2 class="underline text-primary font-bold text-2xl">
+      <div class="flex flex-col gap-2 items-start">
+        <div class="h-80 w-full">
+          <img src="img/vollie2.jpg" alt="" class="rounded-md object-cover size-full" />
+        </div>
+        <h2 class="underline text-secondary-300 font-bold text-xl">
           Celebrating the heart and soul of Men's Sheds this National
           Volunteer Week
         </h2>
@@ -280,21 +286,19 @@
     </div>
   </section>
 
-  <!-- Added -z-30 because this section was showing over the navbar -->
-  <section class="text-center bg-[url(img/pattern-03.jpg)] text-white relative -z-30">
-    <h2 class="p-7 font-bold text-primary text-6xl">
-      <span class="text-white">Positive </span> Impact
-    </h2>
-    <p class="text-2xl p-5">
-      <span class="font-bold text-[#e2d1b5] uppercase">camaraderie</span> -
-      "i've found great group of mates"
+  <section class="text-center bg-impact-layered text-white relative flex flex-col gap-8 px-5 md:px-10 py-20">
+    <h3 class="font-bold text-primary text-3xl md:text-5xl">
+      <span class="text-white">Positive </span> impacts
+    </h3>
+    <p class="text-base">
+      <span class="font-bold text-[#e2d1b5] uppercase tracking-[0.12em]">camaraderie</span> -
+      "I've found great group of mates"
     </p>
-    <p class="font-bold text-2xl md:text-4xl">
-      Mateship is an important pillar of every <br />Mens's Shed-First and
-      fore most the shed is a <br />
-      place for men to knock about with a group of
+    <p class="font-bold text-2xl md:text-3xl m-auto text-center w-full md:w-2/3">
+      Mateship is an important pillar of every Mens's Shed-First and
+      fore most the shed is a place for men to knock about with a group of like-minded mates
     </p>
-    <p class="font-bold">like-minded mates</p>
+    <!-- As how now?? 😭 The separation had to happen ny force? <p class="font-bold">like-minded mates</p> -->
     <div class="flex items-center justify-center gap-5 pt-8 pb-10">
       <div class="bg-primary p-7 h-2/3 rounded-full">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -309,13 +313,14 @@
         </svg>
       </div>
     </div>
-    <img src="img/impact.webp" alt="" class="absolute bottom-0 pl-10" />
+    <div>
   </section>
 
   <!-- notice the chnage in the dimensions of te background position -->
-  <section class="bg-[url(img/timber.jpg)] bg-[160%] bg-no-repeat px-10 py-20 w-full flex flex-col gap-10">
-    <h3 class="text-[#474e28] text-5xl font-bold">Join the conversation,<br> <span class="text-primary">shed
-        Community</span></h3>
+  <section
+    class="bg-none md:bg-[url(img/timber.jpg)] md:bg-[160%] bg-no-repeat px-5 md:px-10 py-20 w-full flex flex-col gap-10">
+    <h3 class="text-[#474e28] text-3xl md:text-5xl font-bold">Join the conversation,<br> <span class="text-primary">Shed
+        community</span></h3>
 
     <p class="md:w-2/3 text-justify text-base">
       Many men, especially after retirement, find themselves alone, often
@@ -326,22 +331,22 @@
       help continue the discussion
       outside of the shed. Jump in and join the conversation today.
     </p>
-    <div class="md:flex items-center justify-between gap-2 h-60">
-      <div class="z-10 relative min-h-max min-w-max w-full h-full">
+    <div class="md:flex items-center justify-between gap-5 md:h-60 h-full w-full">
+      <div class="relative min-h-max min-w-max w-full h-full">
         <div class="card">
           <h1 class="uppercase font-bold text-[#474e28]">podcast</h1>
           <img src="img/shed-wireless.png" alt="" class="h-auto w-40" />
         </div>
         <img src="img/bg-strip-02.jpg" alt="" class="absolute bottom-0" />
       </div>
-      <div class="z-10 relative min-h-max min-w-max w-full h-full">
+      <div class="relative min-h-max min-w-max w-full h-full">
         <div class="card">
           <h1 class="uppercase font-bold text-[#474e28]">shop</h1>
           <img src="img/shed-shop.png" alt="" class="h-auto w-40" />
         </div>
         <img src="img/bg-strip-02.jpg" alt="" class="absolute bottom-0" />
       </div>
-      <div class="z-10 relative min-h-max min-w-max w-full h-full">
+      <div class="relative min-h-max min-w-max w-full h-full">
         <div class="card">
           <h1 class="uppercase font-bold text-[#474e28]">blog</h1>
           <img src="img/shed-online.png" alt="" class="h-auto w-40" />
@@ -362,9 +367,9 @@
           <span class="underline text-secondary-300">Read more about our partners
             and supporters.</span>
         </p>
-        <div class="flex items-center h-full gap-10">
+        <div class="flex items-center h-full md:gap-10 gap-2">
           <div class="flex flex-col gap-20">
-            <img src="img/FDB_Primary_Stacked-Logo.webp" alt="" class="size-30" />
+            <img src="img/FDB_Primary_Stacked-Logo.webp" alt="" class="md:size-27 size-20" />
             <div class="md:flex hidden items-end ">
               <!-- <h1>Major Partner</h1> You don't know how to use semantic tags -->
               <h6 class="text-xs">Major Partner</h6>
@@ -374,8 +379,8 @@
           </div>
           <div class="flex flex-col gap-20">
             <div class="flex gap-2 items-center">
-              <img src="img/logo-card-uncle-tobys.jpg" alt="" class="size-27" />
-              <img src="img/blackdog.webp" alt="" class="size-27" />
+              <img src="img/logo-card-uncle-tobys.jpg" alt="" class="md:size-27 size-20" />
+              <img src="img/blackdog.webp" alt="" class="md:size-27 size-20" />
             </div>
             <div class="md:flex hidden items-end">
               <h6 class="text-xs">Partner</h6>
@@ -391,7 +396,7 @@
         </h3>
         <div class="md:flex gap-10">
           <img src="img/MensShed_Cliff.jpg" alt="" class="rounded-full size-30" />
-          <div>
+          <div class="flex flex-col gap-10">
             <p class="uppercase font-bold text-base tracking-[0.12em]">
               from the farm to the shed
             </p>
@@ -411,7 +416,7 @@
               raff off the street, it’s a cosy respite for many of the
               members, including long time member Cliff “Cliffy” Cousins.
             </p>
-            <a href="#" class="p-3 font-bold uppercase underline text-secondary-300 text-base">
+            <a href="#" class="font-bold uppercase underline text-secondary-300 text-base">
               Read Cliff’s story at The Shed Online blog</a>
           </div>
         </div>
