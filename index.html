@@ -65,18 +65,18 @@
 
     <!-- Lower nav -->
     <div class="bg-primary text-white font-bold flex items-center h-16 px-3">
-      <a href="#" class="border-r-1 border-gray-300 p-4"> Home</a>
+      <a href="#" class="border-r-2 border-[#8ea156] p-4"> Home</a>
       <ul class="font-bold hidden md:flex md:justify-evenly gap-3">
-        <li class="p-4 md:border-r-[0.5px] border-gray-300">
+        <li class="p-4 md:border-r-2 border-[#8ea156]">
           <a href="#"> About Men's Shed</a>
         </li>
-        <li class="p-4 md:border-r-1 border-gray-300">
+        <li class="p-4 md:border-r-2 border-[#8ea156]">
           <a href="#"> For Men's Shed</a>
         </li>
-        <li class="p-4 md:border-r-1 border-gray-300">
+        <li class="p-4 md:border-r-2 border-[#8ea156]">
           <a href="#"> Shed's Community</a>
         </li>
-        <li class="p-4 md:border-r-1 border-gray-300">
+        <li class="p-4 md:border-r-2 border-[#8ea156]">
           <a href="#"> Find a Shed</a>
         </li>
       </ul>
@@ -170,7 +170,8 @@
 
         Also I used justify-between here because justify-evenly will give the div a little padding to the right that we don't like
       -->
-      <div class="flex flex-col items-center md:items-start md:flex-row w-full justify-between gap-10">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center lg:items-start w-full justify-between gap-10">
         <!-- Look at the p tags in each of these divs. I took out the br tags. The line breaks can be manipulated with styling -->
         <div class="flex flex-col gap-8 items-center md:items-start w-full">
           <div class="text-secondary text-6xl flex flex-col gap-2 items-center md:items-start w-full">
@@ -286,7 +287,11 @@
     </div>
   </section>
 
-  <section class="text-center bg-impact-layered text-white relative flex flex-col gap-8 px-5 md:px-10 py-20">
+  <section
+    class="relative text-center bg-[url(../img/pattern-03.jpg)] bg-repeat text-white flex flex-col gap-10 px-5 md:px-10 py-20">
+    <div class="absolute bottom-0 left-0 w-full h-48 bg-[url(../img/impact.webp)] bg-no-repeat bg-bottom bg-contain">
+    </div>
+
     <h3 class="font-bold text-primary text-3xl md:text-5xl">
       <span class="text-white">Positive </span> impacts
     </h3>
@@ -314,23 +319,29 @@
       </div>
     </div>
     <div>
+      <!-- <div class="absolute inset-x-0 h-full bottom-0">
+          <img src="/img/impact.webp" alt="">
+        </div> -->
   </section>
 
   <!-- notice the chnage in the dimensions of te background position -->
   <section
     class="bg-none md:bg-[url(img/timber.jpg)] md:bg-[160%] bg-no-repeat px-5 md:px-10 py-20 w-full flex flex-col gap-10">
-    <h3 class="text-[#474e28] text-3xl md:text-5xl font-bold">Join the conversation,<br> <span class="text-primary">Shed
-        community</span></h3>
+    <div class="flex flex-col gap-10 w-full lg:w-2/3 ">
+      <h3 class="text-[#474e28] text-3xl md:text-6xl font-bold">Join the conversation,<br> <span
+          class="text-primary">Shed
+          community</span></h3>
 
-    <p class="md:w-2/3 text-justify text-base">
-      Many men, especially after retirement, find themselves alone, often
-      living in isolation and needing to connect with their community
-      and find new purpose but aren’t sure how. Others just want to learn a
-      new
-      skill or revisit old ones. AMSA have created a number of channels to
-      help continue the discussion
-      outside of the shed. Jump in and join the conversation today.
-    </p>
+      <p class="text-justify text-base">
+        Many men, especially after retirement, find themselves alone, often
+        living in isolation and needing to connect with their community
+        and find new purpose but aren’t sure how. Others just want to learn a
+        new
+        skill or revisit old ones. AMSA have created a number of channels to
+        help continue the discussion
+        outside of the shed. Jump in and join the conversation today.
+      </p>
+    </div>
     <div class="md:flex items-center justify-between gap-5 md:h-60 h-full w-full">
       <div class="relative min-h-max min-w-max w-full h-full">
         <div class="card">
@@ -355,8 +366,8 @@
       </div>
     </div>
 
-    <div class="flex flex-col md:flex-row items-center justify-between gap-10">
-      <div class="flex flex-col gap-10 md:w-1/2 w-full">
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+      <div class="flex flex-col gap-5 lg:w-1/2 w-full">
         <h3 class="font-bold text-secondary text-3xl">
           Proudly supported by
         </h3>
@@ -367,9 +378,10 @@
           <span class="underline text-secondary-300">Read more about our partners
             and supporters.</span>
         </p>
-        <div class="flex items-center h-full md:gap-10 gap-2">
-          <div class="flex flex-col gap-20">
-            <img src="img/FDB_Primary_Stacked-Logo.webp" alt="" class="md:size-27 size-20" />
+
+        <div class="flex items-center h-full md:gap-10 gap-2 w-full">
+          <div class="flex flex-col gap-20 w-max md:w-full">
+            <img src="img/FDB_Primary_Stacked-Logo.webp" alt="" class="md:size-1/2 size-20" />
             <div class="md:flex hidden items-end ">
               <!-- <h1>Major Partner</h1> You don't know how to use semantic tags -->
               <h6 class="text-xs">Major Partner</h6>
@@ -377,10 +389,10 @@
             </div>
 
           </div>
-          <div class="flex flex-col gap-20">
+          <div class="flex flex-col gap-20 w-full">
             <div class="flex gap-2 items-center">
-              <img src="img/logo-card-uncle-tobys.jpg" alt="" class="md:size-27 size-20" />
-              <img src="img/blackdog.webp" alt="" class="md:size-27 size-20" />
+              <img src="img/logo-card-uncle-tobys.jpg" alt="" class="md:size-1/2 size-20" />
+              <img src="img/blackdog.webp" alt="" class="md:size-1/2 size-20" />
             </div>
             <div class="md:flex hidden items-end">
               <h6 class="text-xs">Partner</h6>
@@ -390,12 +402,12 @@
         </div>
       </div>
 
-      <div class="flex flex-col gap-10 md:w-1/2 w-full">
+      <div class="flex flex-col gap-5 lg:w-1/2 w-full">
         <h3 class="font-bold text-secondary text-3xl">
           Shedder in the Spotlight
         </h3>
-        <div class="md:flex gap-10">
-          <img src="img/MensShed_Cliff.jpg" alt="" class="rounded-full size-30" />
+        <div class="flex flex-col md:flex-row gap-10 items-center md:items-start">
+          <img src="img/MensShed_Cliff.jpg" alt="" class="rounded-full size-1/2" />
           <div class="flex flex-col gap-10">
             <p class="uppercase font-bold text-base tracking-[0.12em]">
               from the farm to the shed
@@ -426,19 +438,19 @@
 
   <!-- Notice the addition of linear gradient to this section -->
   <section
-    class="bg-[linear-gradient(to_right,rgba(232,219,191,1),rgba(232,219,191,1),rgba(232,219,191,0)),url('img/bg-cta.jpg')] p-10 h-full md:h-80 bg-cover bg-no-repeat bg-right flex flex-col md:flex-row justify-center md:justify-start items-center gap-10">
+    class="lg:bg-[linear-gradient(to_right,rgba(232,219,191,1),rgba(232,219,191,1),rgba(232,219,191,0)),url('img/bg-cta.jpg')] bg-[linear-gradient(to_bottom,rgba(232,219,191,1),rgba(232,219,191,1),rgba(232,219,191,0)),url('img/bg-cta.jpg')] p-10 h-full md:h-80 bg-cover bg-no-repeat bg-right flex flex-col lg:flex-row justify-center lg:justify-start items-center gap-10">
     <!-- Another wrong use of h1. Keep your h1 at the hero section and only 1 pe page. Also don't put br tags if they are not really compulsory. br tags will make more sense in beteween paragraphs. Putting it in between text(a sentence) will make the text look tacky on a mobile screen-->
     <!-- <h1 class="font-bold text-5xl text-secondary">
         Discover a place to connect, a <br />
         community to belong to & mates <br />
         that make it all worthwhile.
       </h1> -->
-    <h3 class="font-bold text-xl md:text-3xl text-center md:text-left w-full md:w-1/3 text-secondary">
+    <h3 class="font-bold text-xl md:text-3xl text-center lg:text-left w-full lg:w-1/3 text-secondary">
       Discover a place to connect, a
       community to belong to & mates
       that make it all worthwhile.
     </h3>
-    <div class="flex flex-col gap-5 justify-between items-center md:items-start w-full md:w-1/2">
+    <div class="flex flex-col gap-5 justify-between items-center lg:items-start w-full lg:w-1/2">
       <h3 class="font-bold text-base md:text-2xl">Join us today</h3>
       <div class="flex flex-col md:flex-row items-center justify-evenly gap-2 w-full md:w-2/3">
         <a href="#"
@@ -453,8 +465,10 @@
   </section>
 
   <footer class="bg-[#32391c] w-full">
-    <div class="flex flex-col md:flex-row items-center justify-evenly md:m-auto md:p-10 md:gap-10 gap-5">
-      <div class="flex flex-row md:flex-col justify-between items-center md:gap-10 w-full md:w-auto">
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:flex-row items-center justify-evenly md:m-auto md:p-10 md:gap-10 gap-5">
+      <div
+        class="flex md:col-span-2 lg:col-span-1 flex-row lg:flex-col justify-between items-center md:gap-10 w-full md:w-auto">
         <img src="img/logo-white-stacked.svg" alt="" class="scale-50 md:scale-100" />
         <img src="img/registered.webp" alt="" class="scale-50 md:scale-100" />
       </div>
@@ -513,7 +527,7 @@
         </div>
         <p class="text-white text-sm">@australianmensshedassociation</p>
       </div>
-      <div class="flex flex-col gap-10 w-full md:w-auto h-full p-5">
+      <div class="flex flex-col md:col-span-2 lg:col-span-1 gap-10 w-full md:w-auto h-full p-5">
         <!-- Why are you using a h1 here. There should only be 1 h1 in an entire page. this is semantically wrong. Also the pb-3 was not necessary-->
         <!-- <h1 class="text-white text-lg pb-3">
           Sign up to recieve alert and e-news

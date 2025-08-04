@@ -14,7 +14,6 @@
 }
 
 @utility bg-impact-layered {
-  background-image: url('../img/pattern-03.jpg'), url('/img/impact.webp');
   background-position: center, bottom center;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, contain;
