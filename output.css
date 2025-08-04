@@ -325,9 +325,6 @@
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
-  .w-2\/3 {
-    width: calc(2/3 * 100%);
-  }
   .w-11 {
     width: calc(var(--spacing) * 11);
   }
@@ -799,16 +796,6 @@
       gap: calc(var(--spacing) * 0);
     }
   }
-  .md\:absolute {
-    @media (width >= 48rem) {
-      position: absolute;
-    }
-  }
-  .md\:right-0 {
-    @media (width >= 48rem) {
-      right: calc(var(--spacing) * 0);
-    }
-  }
   .md\:m-auto {
     @media (width >= 48rem) {
       margin: auto;
@@ -1081,11 +1068,6 @@
       width: calc(7/12 * 100%);
     }
   }
-  .lg\:basis-1\/2 {
-    @media (width >= 64rem) {
-      flex-basis: calc(1/2 * 100%);
-    }
-  }
   .lg\:flex-row {
     @media (width >= 64rem) {
       flex-direction: row;
@@ -1094,11 +1076,6 @@
   .xl\:flex {
     @media (width >= 80rem) {
       display: flex;
-    }
-  }
-  .xl\:flex-row {
-    @media (width >= 80rem) {
-      flex-direction: row;
     }
   }
 }
