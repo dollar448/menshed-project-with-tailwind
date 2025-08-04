@@ -10,3 +10,5 @@ dev branch
 git merge
 git pull
 git fetch: Fetching the changes on teh remote repository but you are not merging into your local repository
+
+A bunch of gibberish
