@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
+
 @theme {
   --color-primary: #889c4d;
   --color-secondary: #a00;
@@ -11,18 +12,34 @@
   --font-grotesk: "Host Grotesk", "sans-serif";
   --color-secondary-200: #c9cbc4;
 }
-.card {
-  @apply border-1 border-secondary-200  rounded bg-white m-2;
+
+@utility bg-impact-layered {
+  background-position: center, bottom center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, contain;
+
 }
+
+.card {
+  @apply border-1 border-secondary-200 rounded bg-white flex flex-col justify-between items-start h-full p-5 pb-10 w-full;
+}
+
 .links {
   @apply text-primary-100 hover:text-black;
 }
+
+.yellow-text {
+  @apply uppercase font-bold text-secondary-100 tracking-[0.15em];
+}
+
 .footer-links {
-  @apply text-white font-bold text-xl p-2;
+  @apply text-white font-bold text-lg;
 }
+
 .footer-links-2 {
-  @apply text-white  hover:text-[#e2d1b5] pr-2;
+  @apply text-white hover:text-[#e2d1b5] text-sm;
 }
-.footer-hover{
-    @apply hover:text-[#e2d1b5];
+
+.footer-hover {
+  @apply hover:text-[#e2d1b5];
 }

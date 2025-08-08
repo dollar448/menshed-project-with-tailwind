@@ -1,0 +1,14 @@
+remote repository
+Github website
+dev branch
+
+
+local repository
+file on your local computer
+dev branch 
+
+git merge
+git pull
+git fetch: Fetching the changes on teh remote repository but you are not merging into your local repository
+
+A bunch of gibberish
